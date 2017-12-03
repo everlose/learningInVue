@@ -9,13 +9,15 @@ module.exports = {
         filename: 'build.js'
     },
     module: {
-        rules: [{
+        rules: [
+            {
                 test: /\.css$/,
                 use: [
                     'vue-style-loader',
                     'css-loader'
                 ],
-            }, {
+            },
+            {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
@@ -28,10 +30,18 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/
             },
+            // {
+            //     test: /\.(png|jpg|gif|svg)$/,
+            //     loader: 'file-loader',
+            //     options: {
+            //         name: '[name].[ext]?[hash]'
+            //     }
+            // },
             {
                 test: /\.(png|jpg|gif|svg)$/,
-                loader: 'file-loader',
+                loader: 'url-loader',
                 options: {
+                    limit: 10000,
                     name: '[name].[ext]?[hash]'
                 }
             }
@@ -63,12 +73,12 @@ if (process.env.NODE_ENV === 'production') {
                 NODE_ENV: '"production"'
             }
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: {
-                warnings: false
-            }
-        }),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     sourceMap: true,
+        //     compress: {
+        //         warnings: false
+        //     }
+        // }),
         new webpack.LoaderOptionsPlugin({
             minimize: true
         })

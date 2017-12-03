@@ -1,7 +1,2 @@
-import Vue from 'vue'
-import App from './App.vue'
-
-new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+import style from './assets/styles/reset.css'
+export default style;
