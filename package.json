@@ -1,6 +1,6 @@
 {
   "name": "learning-in-vue",
-  "description": "A Vue.js project",
+  "description": "deep study the vue family",
   "version": "1.0.0",
   "author": "陈子云 <everlose@foxmail.com>",
   "license": "GPL 3.0",
@@ -11,7 +11,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.4.4"
+    "vue": "2.4.4"
   },
   "browserslist": [
     "> 1%",
