@@ -783,3 +783,5 @@ Object
 结构梳理，一图胜千言，并且有关于[此图的附注请自行点击参考](http://naotu.baidu.com/file/89611b9bc6cd0ac214a98abbd5062ade?token=60ef60d5ed3a60cf)
 
 ![](http://7xn4mw.com1.z0.glb.clouddn.com/17-12-10/52589634.jpg)
+
+上一篇：[webpack模块机制](https://github.com/everlose/learningInVue/blob/master/docs/webpack%E6%A8%A1%E5%9D%97%E6%9C%BA%E5%88%B6.md)

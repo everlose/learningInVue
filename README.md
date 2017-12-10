@@ -5,6 +5,7 @@
 ## 文章目录
 
 [webpack模块机制](./docs/webpack模块机制.md)
+[webpack编译vue项目生成的代码大体解读](./docs/webpack编译vue项目生成的代码.md)
 
 ## Demo 启动
 
